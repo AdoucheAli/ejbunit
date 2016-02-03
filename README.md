@@ -8,7 +8,7 @@
 
 How to use:
 
-<code>
+```java
 public class SomeRuleTest {
   private static SomeService someService;
 	
@@ -26,7 +26,7 @@ public class SomeRuleTest {
 		    someService.run();
 	}
 }
-</code>
+```
 
 
 
