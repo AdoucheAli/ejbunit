@@ -1,10 +1,13 @@
 # sophia
 
 - It is about how to create unit tests for ejb3 without an application server;
-- No bullshit
 - No tricks;
 - Simple and straightforward;
 - Similar as you doing with Spring Framework.
+
+How to install:
+
+Coming soon...
 
 How to use:
 
