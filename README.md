@@ -20,10 +20,10 @@ public class SomeRuleTest {
 
   @Test
 	public void testRules() {
-        BlockServiceIn blockServiceIn = getBlockServiceIn();
-		    
-		    someService.setBlockServiceIn(blockServiceIn);
-		    someService.run();
+	        BlockServiceIn blockServiceIn = getBlockServiceIn();
+			    
+		someService.setBlockServiceIn(blockServiceIn);
+		someService.run();
 	}
 }
 ```
