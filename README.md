@@ -1,9 +1,7 @@
 # sophia
 
 - It is about how to create junit test class for ejb3 without an application server;
-- No tricks;
 - Simple and straightforward;
-- Similar as you doing with Spring Framework.
 
 How to install:
 
