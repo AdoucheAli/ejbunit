@@ -21,7 +21,7 @@ public class SomeRuleTest {
 		              someService = (SomeService) testUtil.getBean(SomeService.class);	
 	}
 
-  @Test
+  	@Test
 	public void testRules() {
 	        BlockServiceIn blockServiceIn = getBlockServiceIn();
 			    
