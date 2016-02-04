@@ -7,6 +7,7 @@ import javax.ejb.EJB;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import javax.persistence.PersistenceContext;
+import javax.xml.ws.WebServiceRef;
 
 /**
  * @author anderson.fonseca
@@ -91,6 +92,30 @@ public class EJBUnit {
 				 }
 			 }
 		}
+
+
+		for(Field field: clazz.getSuperclass().getDeclaredFields()){
+			 for(Annotation annotation: field.getAnnotations()){
+				 if (annotation.annotationType().isAssignableFrom(WebServiceRef.class)){
+					 field.setAccessible(true);
+					 Object tmp = field.getType().newInstance();
+					 field.set(object, tmp);
+				 }
+			 }
+		}
+
+		
+		for(Field field: clazz.getDeclaredFields()){
+			 for(Annotation annotation: field.getAnnotations()){
+				 if (annotation.annotationType().isAssignableFrom(WebServiceRef.class)){
+					 field.setAccessible(true);
+					 Object tmp = field.getType().newInstance();
+					 field.set(object, tmp);
+				 }
+			 }
+		}
+
+		
 	}
 	
 	
