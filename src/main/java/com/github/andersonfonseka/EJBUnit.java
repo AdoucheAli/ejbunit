@@ -1,4 +1,4 @@
-package com.sophia.util;
+package com.github.andersonfonseka;
 
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Field;
@@ -12,11 +12,11 @@ import javax.persistence.PersistenceContext;
  * @author anderson.fonseca
  * 
  * */
-public class EJBTestUtil {
+public class EJBUnit {
 	
 	private Object object;
 	
-	public EJBTestUtil() {
+	public EJBUnit() {
 		super();
 	}
 	

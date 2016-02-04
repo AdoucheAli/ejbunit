@@ -1,6 +1,7 @@
-# sophia
+# ejbunit
 
-- It is about how to create junit test class for ejb3 without an application server;
+- It's about how to create junit test class for ejb3 without an application server;
+- No embedded container;
 - Simple and straightforward;
 
 How to install:
@@ -14,7 +15,7 @@ DAO Stateless SessionBean
 ```java
 
 @Stateless
-public class SomeDAO<T> {
+public class SomeDAO {
 
 	@PersistenceContext(name="ProjectPU", unitName="ProjectPU")
 	private EntityManager entityManagerCreator;
@@ -61,8 +62,8 @@ public class SomeRuleTest {
 	
 	@Before
 	public void setUp() throws Exception {
-		 EJBTestUtil testUtil = new EJBTestUtil();
-		              someService = (SomeService) testUtil.getBean(SomeService.class);	
+		 EJBUnit ejbUnit = new EJBTestUtil();
+		              someService = (SomeService) ejbUnit.getBean(SomeService.class);	
 	}
 
   	@Test
