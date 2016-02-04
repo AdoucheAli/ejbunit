@@ -1,8 +1,8 @@
 # ejbunit
 
 - It's about how to create junit test class for ejb3 without an application server;
-- No embedded container;
-- Simple and straightforward;
+- Simple 
+- Straightforward;
 
 How to install:
 
