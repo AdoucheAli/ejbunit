@@ -62,7 +62,7 @@ public class SomeRuleTest {
 	
 	@Before
 	public void setUp() throws Exception {
-		 EJBUnit ejbUnit = new EJBTestUtil();
+		 EJBUnit ejbUnit = new EJBUnit();
 		              someService = (SomeService) ejbUnit.getBean(SomeService.class);	
 	}
 
