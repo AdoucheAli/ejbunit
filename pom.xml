@@ -2,7 +2,15 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.github.andersonfonseka</groupId>
   <artifactId>ejbunit</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>0.0.1-ALPHA</version>
+  <description>Ejb3 Unit Test Case with JUnit</description>
+  <url>https://github.com/andersonfonseka/ejbunit</url>
+  <licenses>
+  	<license>
+		<name>The MIT License (MIT)</name>
+		<url>https://opensource.org/licenses/MIT</url>
+	</license>
+  </licenses>
   
   <dependencies>
   		<dependency>
@@ -22,8 +30,41 @@
 			<artifactId>jaxws-api</artifactId>
 			<version>2.2.11</version>
 		</dependency>
-		
-		
   </dependencies>
+
+	<build>
+	  <plugins>
+	    <plugin>
+	      <groupId>org.apache.maven.plugins</groupId>
+	      <artifactId>maven-source-plugin</artifactId>
+	      <version>2.4</version>
+	      <executions>
+	        <execution>
+	          <id>attach-sources</id>
+	          <phase>verify</phase>
+	          <goals>
+	            <goal>jar-no-fork</goal>
+	          </goals>
+	        </execution>
+	      </executions>
+	    </plugin>
+	    <plugin>
+	        <groupId>org.apache.maven.plugins</groupId>
+	        <artifactId>maven-javadoc-plugin</artifactId>
+	        <version>2.10.3</version>
+	        <configuration>
+	          <show>private</show>
+	          <nohelp>true</nohelp>
+	        </configuration>
+         </plugin>
+	  </plugins>
+	</build>
   
+	<name>EJBUnit</name>
+	<scm>
+		<url>https://github.com/andersonfonseka/ejbunit.git</url>
+	</scm>
+	<organization>
+		<url>https://github.com/andersonfonseka/ejbunit</url>
+	</organization>
 </project>

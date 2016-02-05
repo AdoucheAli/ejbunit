@@ -11,8 +11,8 @@ import javax.xml.ws.WebServiceRef;
 
 /**
  * @author anderson.fonseca
- * 
- * */
+ *
+ */
 public class EJBUnit {
 	
 	private Object object;
@@ -21,6 +21,10 @@ public class EJBUnit {
 		super();
 	}
 	
+	/**
+	 * @param pClazz Receives a class to be instantiated and his dependents fields injected
+	 * @return
+	 */
 	public Object getBean(Class<?> pClazz){
 		
 		try {
@@ -39,6 +43,12 @@ public class EJBUnit {
 		
 	}
 
+	
+	/**
+	 * @param clazz Injects dependent field recursively
+	 * @throws IllegalAccessException
+	 * @throws InstantiationException
+	 */
 	public void populate(Class<?> clazz) throws IllegalAccessException, InstantiationException {
 		
 		for(Field field: clazz.getDeclaredFields()){
@@ -119,6 +129,12 @@ public class EJBUnit {
 	}
 	
 	
+	/**
+	 * @param object Object to be assigned the propreties
+	 * @param clazz Injects dependent field recursively
+	 * @throws IllegalAccessException
+	 * @throws InstantiationException
+	 */
 	private void populate(Object object, Class<?> clazz) throws IllegalAccessException, InstantiationException {
 		
 		for(Field field: clazz.getDeclaredFields()){
