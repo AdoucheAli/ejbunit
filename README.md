@@ -10,7 +10,7 @@ How to install:
 
 2. add local repo
 
-mvn install:install-file -Dfile=<path-to-file>/ejbunit-0.0.1-SNAPSHOT.jar -DgroupId=com.github.andersonfonseka \
+mvn install:install-file -Dfile=path-to-file/ejbunit-0.0.1-ALPHA.jar -DgroupId=com.github.andersonfonseka \
     -DartifactId=ejbunit -Dversion=0.0.1-ALPHA -Dpackaging=jar
 
 reference: https://maven.apache.org/guides/mini/guide-3rd-party-jars-local.html
