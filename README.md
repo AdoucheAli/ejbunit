@@ -6,12 +6,12 @@
 
 How to install:
 
-1. download target/ejbunit-0.0.1-SNAPSHOT.jar
+1. download target/ejbunit-0.0.1-ALPHA.jar
 
 2. add local repo
 
 mvn install:install-file -Dfile=<path-to-file>/ejbunit-0.0.1-SNAPSHOT.jar -DgroupId=com.github.andersonfonseka \
-    -DartifactId=ejbunit -Dversion=0.0.1-SNAPSHOT -Dpackaging=jar
+    -DartifactId=ejbunit -Dversion=0.0.1-ALPHA -Dpackaging=jar
 
 reference: https://maven.apache.org/guides/mini/guide-3rd-party-jars-local.html
 
@@ -21,7 +21,7 @@ reference: https://maven.apache.org/guides/mini/guide-3rd-party-jars-local.html
 		<dependency>
 			<groupId>com.github.andersonfonseka</groupId>
 		    <artifactId>ejbunit</artifactId>
-		    <version>0.0.1-SNAPSHOT</version>		
+		    <version>0.0.1-ALPHA</version>		
 		</dependency>
 ```
 
